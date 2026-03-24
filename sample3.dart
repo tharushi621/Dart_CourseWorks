@@ -56,4 +56,18 @@ print(marks.keys);
 print(marks.values);
 print(marks.containsKey("Alex"));
 print(marks.containsValue(70));
+
+//null safety
+String? name;
+
+if(name != null){
+  print(name.length);
+}else{
+  print("No user logged in");
+}
+print(name?.length);
+print(name ?? "Guest");
+
+String? username = "Nayana";
+print(username!.length);
 }
