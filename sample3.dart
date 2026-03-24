@@ -1,3 +1,5 @@
+import 'dart:math';
+
 void main(){
 //lists - duplicates are allowed
   List<String> cartItems=["Laptop","Mouse","Keyboard","Mouse"];
@@ -36,4 +38,21 @@ print(emails);
 print(emails.length);
 print(emails.contains("alex@gmail.com"));
 print(emails.isEmpty);
+
+//Maps
+Map<String,int> marks={"Alex":80,"Sam":89,"Luna":90};
+print(marks["Luna"]);
+print(marks["John"]);
+
+marks["Sam"]=100;
+marks["Nina"]=95;
+print(marks);
+
+for(var entry in marks.entries){
+  print("${entry.key} scored ${entry.value}");
+}
+
+print(marks.keys);
+print(marks.values);
+print(marks.containsKey("Alex"));
 }
