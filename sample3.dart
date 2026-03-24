@@ -55,4 +55,5 @@ for(var entry in marks.entries){
 print(marks.keys);
 print(marks.values);
 print(marks.containsKey("Alex"));
+print(marks.containsValue(70));
 }
