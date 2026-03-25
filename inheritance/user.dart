@@ -2,7 +2,7 @@ class User{
   String name;
   String email;
 
-  User(this.email,this.name);
+  User(this.name,this.email);
 
   void login(){
     print("$name logged in");
